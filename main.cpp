@@ -102,7 +102,6 @@ bool Book::searchAuthor(const char a[]) const
     return strcmp(author, a) == 0;
 }
 
-// Add Book to File
 void writeBook()
 {
     Book bk;
@@ -116,7 +115,6 @@ void writeBook()
     outFile.close();
 }
 
-// Display All Books
 void displayAllBooks()
 {
     Book bk;
@@ -131,7 +129,6 @@ void displayAllBooks()
     inFile.close();
 }
 
-// Search by Title
 void searchByTitle()
 {
     Book bk;
@@ -160,7 +157,6 @@ void searchByTitle()
         cout << "\nBook Not Found!\n";
 }
 
-// Search by Author
 void searchByAuthor()
 {
     Book bk;
@@ -189,7 +185,6 @@ void searchByAuthor()
         cout << "\nNo Books Found!\n";
 }
 
-// Issue or Return Book
 void modifyBook(int id, int option)
 {
     Book bk;
